@@ -13,7 +13,13 @@
 </head>
 <body>
     <div id="app">
-        <h1>{{email}}</h1>
+        <div class="emailList" v-if="emailList.length === 10">
+            <ul>
+                <li v-for="el in emailList">
+                    {{el}}
+                </li>
+            </ul>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
