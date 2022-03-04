@@ -5,6 +5,7 @@ const app = new Vue({
     data:{
         //email:'boolean_class-54@outlook.com',
         emailList:[],
+        title: 'Email List get by API.'
     },
     methods:{
         getEmail: function(){

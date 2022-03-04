@@ -13,9 +13,12 @@
 </head>
 <body>
     <div id="app">
-        <div class="emailList" v-if="getEmail">
-            <ul>
-                <li v-for="el in emailList">
+        <h1>
+            {{title}}
+        </h1>
+        <div class="emailList_container" v-if="getEmail">
+            <ul id="emailList">
+                <li id="email" v-for="el in emailList">
                     {{el}}
                 </li>
             </ul>
