@@ -6,6 +6,13 @@ const app = new Vue({
         //email:'boolean_class-54@outlook.com',
         emailList:[],
     },
+    methods:{
+        getEmail: function(){
+            if (this.emailList.length === 10){
+                return true;
+            }
+        }
+    },
     created(){
         for (let i = 0; i < 10; i++){
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
@@ -14,7 +21,7 @@ const app = new Vue({
                 this.emailList.push(res.data.response);
             })
         }
-    }
+    },
 })
 
 console.log(app);

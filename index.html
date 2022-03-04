@@ -13,7 +13,7 @@
 </head>
 <body>
     <div id="app">
-        <div class="emailList" v-if="emailList.length === 10">
+        <div class="emailList" v-if="getEmail">
             <ul>
                 <li v-for="el in emailList">
                     {{el}}
